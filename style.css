@@ -1,0 +1,252 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2a3b8d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  /* max-height: 0; */
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f2a23a;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-visible {
+  max-height: 300px; /* Ajuste o valor conforme o conteúdo do menu */
+}
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #2a3b8d;
+  margin-bottom: 10px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+#atualidades, #pontos-turisticos, #porque-contratar {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.atualidades-imagens, .pontos-turisticos-imagens, .depoimentos {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.atualidades-imagens figure,
+.pontos-turisticos-imagens figure,
+.depoimentos figure {
+  max-width: 250px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.atualidades-imagens a {
+  text-decoration: none;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  object-fit: cover;
+}
+
+figure:hover {
+  transform: scale(1.05);
+}
+
+figcaption {
+  font-weight: bold;
+  color: #333;
+  margin-top: 8px;
+}
+
+.depoimentos p {
+  margin-top: 8px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn-especialista {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #3b7dd8;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-especialista:hover {
+  background-color: #295ab7;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: #2a3b8d;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;  
+  top: 20px;  
+  left: 20px; 
+  max-width: 150px;
+  height: auto;
+}
+
+.logo img {
+  max-width: 90px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.testimonial {
+  display: none;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #3b7dd8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Escondido por padrão */
+  transition: opacity 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #295ab7;
+}
+
+@media (max-width: 768px) {
+  .atualidades-imagens, .pontos-turisticos-imagens, .depoimentos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a3b8d;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+  header nav ul {
+    display: none;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+  }
+
+  .menu-open nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a3b8d;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+  .btn-especialista {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1em;
+  }
+
+  .logo {
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | AJR Viagens</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="imgs/LOGO-AJR.png" alt="Logo AJR Viagens">
+        </a>
+        <h1>AJR Viagens</h1>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="/about.html">Quem Somos</a></li>
+            <li><a href="/services.html">Serviços</a></li>
+            <li><a href="/contact.html">Contato</a></li>
+          </ul>
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <h1>Serviços</h1>
+            <div class="service-list">
+                <div class="service-item">
+                    <h2>Pacotes de Viagem</h2>
+                    <img src="imgs/packs.jpeg" alt="Pacotes de viagem">
+                    <p>Oferecemos pacotes personalizados para destinos nacionais e internacionais.</p>
+                </div>
+                <div class="service-item">
+                    <h2>Reservas de Hotéis</h2>
+                    <img src="imgs/hotel.png" alt="Imagem de Hotel">
+                    <p>Encontramos os melhores hotéis com as melhores tarifas para você.</p>
+                </div>
+                <div class="service-item">
+                    <h2>Guia de Viagem</h2>
+                    <img src="imgs/guide.jpeg" alt="Guia turístico">
+                    <p>Guias experientes para garantir uma viagem tranquila e bem organizada.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="back-to-top" onclick="scrollToTop()">⬆️</button>
+    <footer>
+        <p>&copy; 2024 AJR Viagens. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

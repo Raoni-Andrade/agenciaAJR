@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2a3b8d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f2a23a;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-us, .services {
+  margin-bottom: 40px;
+}
+
+.about-us h1, .services h1 {
+  color: #2a3b8d;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.mission-vision, .service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mission, .vision, .service-item {
+  flex: 1 1 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission:hover, .vision:hover, .service-item:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #2a3b8d;
+  margin-bottom: 10px;
+}
+
+.values {
+  padding: 20px;
+  background-color: #e3f2fd;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.values ul {
+  list-style-type: none;
+}
+
+.values ul li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #2a3b8d;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.team {
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.team h2 {
+  color: #2a3b8d;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.team-members a {
+  text-decoration: none;
+}
+
+.team-member {
+  flex: 1 1 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.5em;
+  color: #3b7dd8;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1em;
+  color: #666;
+}
+
+.logo {
+  position: absolute;  
+  top: 20px;  
+  left: 20px; 
+  max-width: 150px;
+  height: auto;
+}
+
+.logo img {
+  max-width: 90px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.service-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover; 
+  margin-bottom: 15px;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #3b7dd8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Escondido por padrão */
+  transition: opacity 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #295ab7;
+}
+
+@media (max-width: 768px) {
+  .mission-vision, .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-us h1, .services h1 {
+    font-size: 2em;
+  }
+
+  .mission, .vision, .service-item {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a3b8d;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .btn-especialista {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1em;
+  }
+
+  .menu-toggle {
+    display: block; 
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+}
+
+  .menu-open nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a3b8d;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+}
+
